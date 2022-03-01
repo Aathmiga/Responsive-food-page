@@ -1,2 +1,2 @@
 # Responsive-food-page
-consist of dark mode
+consist of light mode and dark mode
