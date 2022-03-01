@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zomato</title>
+    <link href="zomato.css" rel="stylesheet">
+    <script>
+        function changeMode(){
+            var mybody=document.body;
+            mybody.classList.toggle("dark")
+        }
+
+
+        function rest(s1,s2)
+{
+    var s1=document.getElementById(s1);
+    var s2=document.getElementById(s2);
+    s2.innerHTML="";
+    if(s1.value=="Delhi"){
+        var optionArray = ['the park new delhi|The Park New Delhi', 'taj palace|Taj palace','Hotel viva palace|Hotel Viva Palace'];
+    }
+    else if(s1.value=="Mumbai")
+    {
+        var optionArray = ['hotel marine plaza|Hotel Marine Plaza','hotel godwin|Hotel Godwin'];
+    }
+    else if(s1.value=="Kolkata")
+    {
+        var optionArray = ['itc royal bengal|ITC Royal Bengal','novotel kolkata|Novotel Kolkata Hotel '];
+    }
+    else if(s1.value=="Chennai")
+    {
+        var optionArray = ['the residency tower|The Residency Tower','lemon tree hotel|Lemon Tree Hotel ','Clarion hotel president|Clarion Hotel President'];
+    }
+    else if(s1.value=="Bangalore")
+    {
+        var optionArray = ['the lalit ashok|The Lalit Ashok','hotel royal orchid|Hotel Royal Orchid '];
+    }
+    else if(s1.value=="Hydrabad")
+    {
+        var optionArray = ['Avasa hotel|Avasa Hotel','red fox hotel|Red Fox hotel'];
+    }
+    for(var option in optionArray)
+    {
+        var pair=optionArray[option].split("|");
+        var newoption=document.createElement("option");
+        newoption.value=pair[0];
+        newoption.innerHTML=pair[1];
+        s2.options.add(newoption);
+    }
+}
+    </script>
+    <style>
+     body{
+        background-color: white;
+        color:black;
+    }
+    .dark{
+        background-color:black ;
+        color:white;
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="icon">
+            <h1>Zomato</h1>
+        </div>
+        <div id="social">
+            <a href="https//www.facebook.com" target="_blank">
+                <img src="assets/images/faci.png" alt="facebook" class="soci-logo">
+            </a>
+            <a href="https//www.instagram.com" target="_blank">
+                <img src="assets/images/instagram.jpg" alt="Instagram" class="soci-logo">
+            </a>
+            <a href="https//www.whatsapp.com" target="_blank">
+                <img src="assets/images/whatsapp.webp" alt="Whatsapp" class="soci-logo">
+            </a>
+        </div>
+        
+    </header>
+    
+    <div id="search">
+        <div id="logo">
+                <span>Z!</span>
+        
+    
+    </div>
+    
+    <div id="heading">
+        Find The Best Restaurants Near You
+    </div>
+    <div class="dropdown">
+        <select name="select1" id="select1" onchange="rest(this.id,'select2')">
+            <option>
+                CITY
+            </option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Kolkata</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Hydrabad</option>
+        </select>
+        <select name="select2" id="select2">
+            
+        </select>
+    </div>
+    </div>
+    <div id="quickSearch">
+        <span id="quickHeading">
+            Quick Search
+        </span>
+        <span id="quickSub">
+            Discover Restarants By Meal
+        </span>
+        <div class="main">
+            <div class="titlecontainer">
+                <div class="title1">
+                    <img src="assets/images/indian2.jpeg">
+                </div>
+                <div class="title2">
+                    <div class="menu">
+                        Idli
+                    </div>
+                    <div class="content">
+                        Enjoy your meal made with love
+                    </div>
+                </div>
+            </div>
+            <div class="titlecontainer">
+                <div class="title1">
+                    <img src="assets/images/index6.jpg">
+                </div>
+                <div class="title2">
+                    <div class="menu">
+                        Noodles
+                    </div>
+                    <div class="content">
+                        Enjoy your meal made with love
+                    </div>
+                </div>
+            </div>
+            <div class="titlecontainer">
+                <div class="title1">
+                    <img src="assets/images/index5.jpg">
+                </div>
+                <div class="title2">
+                    <div class="menu">
+                        Pizza
+                    </div>
+                    <div class="content">
+                        Enjoy your meal made with love
+                    </div>
+                </div>
+            </div>
+            <div class="titlecontainer">
+                <div class="title1">
+                    <img src="assets/images/index4.jpg">
+                </div>
+                <div class="title2">
+                    <div class="menu">
+                        Lunch
+                    </div>
+                    <div class="content">
+                        Enjoy your meal made with love
+                    </div>
+                </div>
+            </div>
+            <div class="titlecontainer">
+                <div class="title1">
+                    <img src="assets/images/index3.jpg">
+                </div>
+                <div class="title2">
+                    <div class="menu">
+                        Dinner
+                    </div>
+                    <div class="content">
+                        Enjoy your meal made with love
+                    </div>
+                </div>
+            </div>
+            <div class="titlecontainer">
+                <div class="title1">
+                    <img src="assets/images/index2.jpg">
+                </div>
+                <div class="title2">
+                    <div class="menu">
+                        Break Fast
+                    </div>
+                    <div class="content">
+                        Enjoy your meal made with love
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <br>
+        <hr>
+        <center><h3>Developed by Aathmiga</h3></center>
+        <button id="mode" onclick="changeMode()">change mode</button>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+

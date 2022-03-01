@@ -1,0 +1,202 @@
+#header{
+    height:60px;
+    border:2px solid red;
+    background-color: rgb(230, 9, 9);
+    color: white;
+}
+#search{
+    height:400px;
+    border:2px solid black;
+    background-image: url("assets/images/temp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    height:120px;
+    width:120px;
+    background-color: white;
+    border-radius: 50%;
+   margin-left: 45%;
+   margin-top: 1%;
+   position: absolute;
+   font-size: 60px;
+   color: red;
+   animation:movelogo 20s infinite;
+}
+@keyframes movelogo{
+    0%{margin-left:45%;}
+    20%{margin-left:40%;}
+    60%{margin-left:50%;}
+    80%{margin-left:40%;}
+    100%{margin-left:50%;}
+    
+
+    
+
+}
+#logo > span{
+    margin-left:31%;
+    margin-top:23%;
+    position: absolute;
+}
+#heading{
+    margin-left: 31%;
+    margin-top: 11%;
+    position: absolute;
+    font-size: 40px;
+    color: antiquewhite;
+}
+#heading:hover{
+    color: aquamarine;
+}
+.dropdown{
+    height:65px;
+    width: 60%;
+    margin-left: 31%;
+    margin-top: 16%;
+    position: absolute;
+    
+    
+}
+select{
+    height:100%;
+    width:35%;
+}
+restaurant-select{
+    width:100%;
+}
+.soci-logo{
+    height:35px;
+    padding-left: 15px;
+    
+    
+
+}
+#social{
+    float:right;
+    margin-right: 1%;
+    margin-top: 1%;
+    
+   }
+   a{
+       text-decoration: none;
+   }
+#icon{
+    margin-left: 1%;
+    position: absolute;
+    margin-top: -1%;
+}
+#quickSearch{
+    
+    width:80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    display:inline-block;
+}
+#quickHeading:hover{
+
+color: crimson;
+}
+#quickHeading{
+    display:block;
+    color:rgb(230, 9, 9);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+#quickSub{
+    line-height:2;
+    color:goldenrod;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+.titlecontainer{
+    height:180px;
+    width:30%;
+    float:left;
+    box-shadow: 10px 15px 10px rgb(228, 198, 198);
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.titlecontainer:hover{
+    transform: scale(0.9);
+    transform: rotate(-3deg);
+}
+.title1{
+    width:50%;
+    float:left;
+    height:180px;
+}
+.title1 > img{
+    width:105%;
+    height:100%;
+}
+.title2{
+    width:45%;
+    float:left;
+    margin-left: 14px;
+    margin-top: 45px;
+}
+.menu{
+    color:red;
+    font-size: 25px;
+}
+.content{
+    color:gray;
+    font-size: 15px;
+}
+@media screen and (max-width:1200px) {
+    #heading{
+        margin-left: 25%;
+    margin-top: 15%;
+    position: absolute;
+    font-size: 40px;
+    color: antiquewhite;
+    } 
+    .dropdown{
+
+    margin-left: 30%;
+    margin-top: 22%;
+    }
+    .titlecontainer{
+            width:43%;
+        }
+        #coupon{
+            height: 400px;
+            width:400px;
+            background-color: aquamarine;
+        }
+
+    @media screen and (max-width:1000px){
+        .titlecontainer{
+            width:43%;
+        }
+        .dropdown{
+
+margin-left: 30%;
+margin-top: 22%;
+}
+    }
+    @media screen and (max-width:600px){
+        .titlecontainer{
+            width:43%;
+        }
+        .dropdown{
+
+margin-left: 25%;
+margin-top: 22%;
+}
+    }
+    @media screen and (max-width:400px){
+        .titlecontainer{
+            width:53%;
+        }
+    }
+    @media screen and (max-width:300px){
+        .titlecontainer{
+            width:60%;
+        }
+    }
+}
